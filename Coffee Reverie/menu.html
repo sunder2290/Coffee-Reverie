@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Вкусов — Coffee Reverie</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Coffee Reverie</a>
+            <nav class="nav-menu">
+                <a href="menu.html" class="nav-link active">Меню</a>
+                <a href="guide.html" class="nav-link">Подбор кофе</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="menu-page">
+        <div class="container">
+            <div class="menu-header">
+                <h1 class="menu-page-title">Карта Вкусов</h1>
+                <p class="section-subtitle" style="margin-top: 20px;">От классического эспрессо до авторских десертов — каждый найдёт своё идеальное сочетание.</p>
+            </div>
+
+            <!-- Слайдер -->
+            <div class="menu-slider" id="menuSlider">
+                <div class="slider-container">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="slider-slide"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&h=400&q=85" alt="Акция"><div class="slide-content"><h3>☕️ Акция дня</h3><p>Любой кофе за 199 ₽ с 8:00 до 11:00</p></div></div>
+                        <div class="slider-slide"><img src="https://hitecher.com/storage/img/20190423/fec2aa6ce2cd69274881_1200x400.jpg" alt="Новинка"><div class="slide-content"><h3>🍂 Новинка: Тыквенный Латте</h3><p>Осенняя классика с пряностями</p></div></div>
+                        <div class="slider-slide"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&h=400&q=85" alt="Совет"><div class="slide-content"><h3>👨‍🍳 Совет бариста</h3><p>Эспрессо Тоник с апельсиновой цедрой</p></div></div>
+                        <div class="slider-slide"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1200&h=400&q=85" alt="Веган"><div class="slide-content"><h3>🌱 Новое веган-меню</h3><p>Растительное молоко, овсяные десерты</p></div></div>
+                    </div>
+                    <button class="slider-btn slider-prev" id="sliderPrev">‹</button>
+                    <button class="slider-btn slider-next" id="sliderNext">›</button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                </div>
+            </div>
+
+            <!-- Блок "Часто заказывают" -->
+            <div class="popular-section">
+                <div class="container" style="padding:0">
+                    <h2 class="popular-title"><span>🔥</span> Часто заказывают <span>❤️</span></h2>
+                    <div class="popular-grid">
+                        <div class="menu-card animate-on-scroll" data-name="Лавандовый Латте">
+                            <img src="https://avatars.mds.yandex.net/i?id=936dd4d5e008e6501ad5bef89828bdb8_l-3738095-images-thumbs&n=13" class="menu-card-img">
+                            <div class="menu-card-info"><div class="menu-card-header"><span>Лавандовый Латте</span><span class="menu-card-price">320 ₽</span></div><p class="menu-card-desc">Фирменный эспрессо с воздушной молочной пеной и лавандой.</p></div>
+                        </div>
+                        <div class="menu-card animate-on-scroll" data-name="Карамельный Раф">
+                            <img src="https://avatars.mds.yandex.net/i?id=9e6f384d46305185abe9b933ceb9ff5e_l-9053045-images-thumbs&n=13" class="menu-card-img">
+                            <div class="menu-card-info"><div class="menu-card-header"><span>Карамельный Раф</span><span class="menu-card-price">350 ₽</span></div><p class="menu-card-desc">Сливки, эспрессо и домашняя соленая карамель.</p></div>
+                        </div>
+                        <div class="menu-card animate-on-scroll" data-name="Матча Латте Церемониал">
+                            <img src="https://www.vitalproteins.com/cdn/shop/articles/AdobeStock_91649245-copy_600x.jpg?v=1595975471" class="menu-card-img">
+                            <div class="menu-card-info"><div class="menu-card-header"><span>Матча Латте Церемониал</span><span class="menu-card-price">340 ₽</span></div><p class="menu-card-desc">Японский чай высшего качества на кокосовом молоке.</p></div>
+                        </div>
+                        <div class="menu-card animate-on-scroll" data-name="Миндальный Круассан">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=400&q=85" class="menu-card-img">
+                            <div class="menu-card-info"><div class="menu-card-header"><span>Миндальный Круассан</span><span class="menu-card-price">240 ₽</span></div><p class="menu-card-desc">Слоеное тесто, миндальный крем.</p></div>
+                        </div>
+                        <div class="menu-card animate-on-scroll" data-name="Скрембл-тост с лососем">
+                            <img src="https://avatars.mds.yandex.net/i?id=c04ccb2cb3a20a9f82eec6b394532f84_l-5222428-images-thumbs&n=13" class="menu-card-img">
+                            <div class="menu-card-info"><div class="menu-card-header"><span>Скрембл-тост с лососем</span><span class="menu-card-price">480 ₽</span></div><p class="menu-card-desc">Крафтовый хлеб, скрембл, слабосоленая форель.</p></div>
+                        </div>
+                        <div class="menu-card animate-on-scroll" data-name="Ирландский кофе">
+                            <img src="https://lifekhacker.com/_nw/149/95716622.jpg" class="menu-card-img">
+                            <div class="menu-card-info"><div class="menu-card-header"><span>Ирландский кофе</span><span class="menu-card-price">390 ₽</span></div><p class="menu-card-desc">Кофе с ирландским виски, коричневым сахаром, сливками.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- КОФЕЙНАЯ КЛАССИКА И РАФЫ -->
+            <div class="menu-category">
+                <h2 class="menu-category-title"><span class="menu-category-icon">☕️</span> Кофейная классика и Рафы</h2>
+                <div class="menu-grid">
+                    <div class="menu-card animate-on-scroll" data-name="Лавандовый Латте"><img src="https://avatars.mds.yandex.net/i?id=936dd4d5e008e6501ad5bef89828bdb8_l-3738095-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Лавандовый Латте</span><span class="menu-card-price">320 ₽</span></div><p class="menu-card-desc">Фирменный эспрессо с воздушной молочной пеной и легким шлейфом лаванды.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Карамельный Раф"><img src="https://avatars.mds.yandex.net/i?id=9e6f384d46305185abe9b933ceb9ff5e_l-9053045-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Карамельный Раф</span><span class="menu-card-price">350 ₽</span></div><p class="menu-card-desc">Нежнейшие сливки, взбитые с эспрессо и нашей соленой карамелью.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Эспрессо (двойной)"><img src="https://avatars.mds.yandex.net/i?id=a4ff550ea0c80a38396c3feab6dcc1e1_l-5234178-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Эспрессо (двойной)</span><span class="menu-card-price">180 ₽</span></div><p class="menu-card-desc">Насыщенный, с плотной пенкой крема.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Американо"><img src="https://avatars.mds.yandex.net/i?id=cb7e8b9212ace9c22c8856a7976823e2_l-10696367-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Американо</span><span class="menu-card-price">190 ₽</span></div><p class="menu-card-desc">Классический эспрессо, разбавленный горячей водой.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Капучино"><img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=600&h=400&q=85" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Капучино</span><span class="menu-card-price">260 ₽</span></div><p class="menu-card-desc">Эспрессо, равные доли молока и плотной молочной пены.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Флэт Уайт"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=400&q=85" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Флэт Уайт</span><span class="menu-card-price">280 ₽</span></div><p class="menu-card-desc">Двойной эспрессо с тонким слоем микропены.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Медовый Раф с корицей"><img src="https://bb.lv/storage/blog_posts/38001/37576/c/5t5pc7m2et20-webp-large.webp" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Медовый Раф с корицей</span><span class="menu-card-price">340 ₽</span></div><p class="menu-card-desc">Натуральный мед, корица, эспрессо и топленое молоко.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Мокко"><img src="https://avatars.mds.yandex.net/i?id=4be7ac044760b93c188e15dbe736e274_l-8331517-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Мокко</span><span class="menu-card-price">310 ₽</span></div><p class="menu-card-desc">Шоколадный латте с добавлением эспрессо и взбитых сливок.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Ирландский кофе"><img src="https://lifekhacker.com/_nw/149/95716622.jpg" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Ирландский кофе</span><span class="menu-card-price">390 ₽</span></div><p class="menu-card-desc">Кофе с ирландским виски, коричневым сахаром и шапкой сливок.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Эспрессо Романо"><img src="https://avatars.mds.yandex.net/i?id=c6246581f338a986e9b1f0e3356cfa39ee98f89d-2950006-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Эспрессо Романо</span><span class="menu-card-price">190 ₽</span></div><p class="menu-card-desc">Классический эспрессо с долькой лимона.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Латте Макиато"><img src="https://i.nefisyemektarifleri.com/2023/04/28/macchiato-nedir-nasil-yapilir-icilir.jpg" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Латте Макиато</span><span class="menu-card-price">300 ₽</span></div><p class="menu-card-desc">Слоевая подача: горячее молоко, пенка, эспрессо.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Бомбон (кофе по-вьетнамски)"><img src="https://avatars.mds.yandex.net/i?id=2b6cb74cea7324abbbe5842c9d1ad1c0c35d00ea-8249766-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Бомбон (кофе по-вьетнамски)</span><span class="menu-card-price">280 ₽</span></div><p class="menu-card-desc">Эспрессо на сгущенном молоке со льдом.</p></div></div>
+                </div>
+            </div>
+
+            <!-- НЕ-КОФЕ И ЧАИ -->
+            <div class="menu-category">
+                <h2 class="menu-category-title"><span class="menu-category-icon">🍵</span> Не-кофе и Чаи</h2>
+                <div class="menu-grid">
+                    <div class="menu-card animate-on-scroll" data-name="Матча Латте Церемониал"><img src="https://www.vitalproteins.com/cdn/shop/articles/AdobeStock_91649245-copy_600x.jpg?v=1595975471" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Матча Латте Церемониал</span><span class="menu-card-price">340 ₽</span></div><p class="menu-card-desc">Японский чай высшего качества на кокосовом молоке.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Пряный Какао"><img src="https://assets-a1.kompasiana.com/items/album/2023/01/09/minuman-coklat-63bba0db43a84b1e8775a4e3.jpg?t=o&v=1200" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Пряный Какао</span><span class="menu-card-price">290 ₽</span></div><p class="menu-card-desc">Бельгийский шоколад с корицей.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Чай Масала"><img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=600&h=400&q=85" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Чай Масала</span><span class="menu-card-price">280 ₽</span></div><p class="menu-card-desc">Черный чай с молоком, кардамоном, корицей, имбирем.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Глинтвейн (безалкогольный)"><img src="https://avatars.mds.yandex.net/i?id=827cb5262b0e386ae7d24b972210d201_l-4297953-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Глинтвейн (безалкогольный)</span><span class="menu-card-price">310 ₽</span></div><p class="menu-card-desc">Виноградный сок с апельсином, корицей, бадьяном.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Травяной сбор «Вечерний»"><img src="https://avatars.mds.yandex.net/i?id=73466398146c80d96e3e3e2d3f771e0d-4460401-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Травяной сбор «Вечерний»</span><span class="menu-card-price">240 ₽</span></div><p class="menu-card-desc">Ромашка, мелисса, чабрец и мята.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Куркума латте"><img src="https://avatars.mds.yandex.net/i?id=bafcfbee846e1b8ccd4393650d3552a9e5adc1f9-4290971-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Куркума латте</span><span class="menu-card-price">290 ₽</span></div><p class="menu-card-desc">Золотое молоко с куркумой, имбирем.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Чай с бергамотом (Эрл Грей)"><img src="https://avatars.mds.yandex.net/i?id=27b7ea4b56f593ce6b78d20a68cc84b3ceee714b-12854487-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Чай с бергамотом (Эрл Грей)</span><span class="menu-card-price">220 ₽</span></div><p class="menu-card-desc">Классический черный чай с маслом бергамота.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Ягодный морс с мятой"><img src="https://buyseafood.ru/upload/iblock/255/255cda3bbe5b38b27c42a52763c63e6d.jpg" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Ягодный морс с мятой</span><span class="menu-card-price">260 ₽</span></div><p class="menu-card-desc">Брусника, клюква, свежая мята.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Имбирный чай с медом"><img src="https://avatars.mds.yandex.net/i?id=4edfedce8b7dc735316f93617e1b4644f2b741c1-6202122-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Имбирный чай с медом</span><span class="menu-card-price">250 ₽</span></div><p class="menu-card-desc">Согревающий настой из имбиря, лимона и меда.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Мятный шоколад"><img src="https://avatars.mds.yandex.net/i?id=f406e3998ac42eebe1dbb19bf39f863796d70b62-7552276-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Мятный шоколад</span><span class="menu-card-price">280 ₽</span></div><p class="menu-card-desc">Горячий шоколад с мятой и взбитыми сливками.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Каркадэ (Хамайрик)"><img src="https://avatars.mds.yandex.net/i?id=b7ffe71967917a108940e371fb92250e_l-13203964-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Каркадэ (Хамайрик)</span><span class="menu-card-price">210 ₽</span></div><p class="menu-card-desc">Красный чай из суданской розы.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Бурый рис чай (Гэнмайтя)"><img src="https://avatars.mds.yandex.net/i?id=48e12afad8a50391862b731bb176a6da5599f530-10166367-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Бурый рис чай (Гэнмайтя)</span><span class="menu-card-price">270 ₽</span></div><p class="menu-card-desc">Зеленый чай с обжаренным рисом.</p></div></div>
+                </div>
+            </div>
+
+            <!-- ЗАВТРАКИ И ВЫПЕЧКА -->
+            <div class="menu-category">
+                <h2 class="menu-category-title"><span class="menu-category-icon">🥐</span> Завтраки и Выпечка</h2>
+                <div class="menu-grid">
+                    <div class="menu-card animate-on-scroll" data-name="Миндальный Круассан"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=400&q=85" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Миндальный Круассан</span><span class="menu-card-price">240 ₽</span></div><p class="menu-card-desc">Свежая выпечка с миндальным кремом.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Скрембл-тост с лососем"><img src="https://avatars.mds.yandex.net/i?id=c04ccb2cb3a20a9f82eec6b394532f84_l-5222428-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Скрембл-тост с лососем</span><span class="menu-card-price">480 ₽</span></div><p class="menu-card-desc">Хрустящий хлеб, скрембл, слабосоленая форель.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Гранола с йогуртом и ягодами"><img src="https://avatars.mds.yandex.net/i?id=b2051d526310e7f3691e5d57826b507377109dcc-5233919-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Гранола с йогуртом и ягодами</span><span class="menu-card-price">390 ₽</span></div><p class="menu-card-desc">Домашняя гранола, греческий йогурт, ягоды, мед.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Сэндвич с курицей и песто"><img src="https://avatars.mds.yandex.net/i?id=8471b87fa1c89195ba1dad257271d4335c21c057-5252229-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Сэндвич с курицей и песто</span><span class="menu-card-price">420 ₽</span></div><p class="menu-card-desc">Фокачча, курица, песто, руккола.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Авокадо-тост с яйцом пашот"><img src="https://avatars.mds.yandex.net/i?id=7a24d94caba92f16efd29b627aeb83b41268f2d9-4885555-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Авокадо-тост с яйцом пашот</span><span class="menu-card-price">450 ₽</span></div><p class="menu-card-desc">Зерновой хлеб, авокадо, яйцо пашот.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Шоколадный брауни"><img src="https://avatars.mds.yandex.net/i?id=ba4cdaa8796fffb5a4de779eb8ad910a-4590012-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Шоколадный брауни</span><span class="menu-card-price">260 ₽</span></div><p class="menu-card-desc">Плотный брауни с грецким орехом.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Оладьи с бананом"><img src="https://avatars.mds.yandex.net/i?id=4612dd9224213ea041f782d8bcbc20c161e337ad-10104341-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Оладьи с бананом</span><span class="menu-card-price">320 ₽</span></div><p class="menu-card-desc">Воздушные оладьи, карамелизированный банан, кленовый сироп.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Панкейки с кленовым сиропом"><img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=600&h=400&q=85" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Панкейки с кленовым сиропом</span><span class="menu-card-price">350 ₽</span></div><p class="menu-card-desc">Три панкейка, кленовый сироп, сливочное масло.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Киш с лососем и шпинатом"><img src="https://avatars.mds.yandex.net/i?id=46d8bbe7683551897f1865cd933181e46723ce5d-4032520-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Киш с лососем и шпинатом</span><span class="menu-card-price">430 ₽</span></div><p class="menu-card-desc">Песочная основа, заливка из сливок и яиц, лосось.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Капрезе сэндвич"><img src="https://avatars.mds.yandex.net/i?id=ec92017a9d2231108a0496fc48e38c041f5c2438-4012245-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Капрезе сэндвич</span><span class="menu-card-price">380 ₽</span></div><p class="menu-card-desc">Чиабатта, моцарелла, томаты, базилик, бальзамик.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Тарт Татен"><img src="https://avatars.mds.yandex.net/i?id=2a00000179eb4919d8b5453ecb621f0f5d91-5101235-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Тарт Татен</span><span class="menu-card-price">280 ₽</span></div><p class="menu-card-desc">Перевернутый яблочный пирог с карамелью.</p></div></div>
+                    <div class="menu-card animate-on-scroll" data-name="Овсяноблин с творогом"><img src="https://avatars.mds.yandex.net/i?id=83b80531859a2779508541e8b6f190d2c206156d-5213641-images-thumbs&n=13" class="menu-card-img"><div class="menu-card-info"><div class="menu-card-header"><span>Овсяноблин с творогом</span><span class="menu-card-price">340 ₽</span></div><p class="menu-card-desc">Овсяный блинчик, творожная начинка, ягоды, мед.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><div class="footer-logo-text">Coffee Reverie</div><p class="footer-description">Пространство эстетики, вкуса и ваших самых нежных кофейных грез. Ждем вас в гости каждый день.</p><div class="social-links"><a href="#">📷</a><a href="#">✈️</a><a href="#">📱</a></div></div>
+                <div class="footer-col"><h4>Быстрые ссылки</h4><ul class="footer-links"><li><a href="index.html">🏠 Главная</a></li><li><a href="menu.html">☕️ Меню</a></li><li><a href="guide.html">📖 Подбор кофе</a></li><li><a href="contacts.html">📞 Контакты</a></li></ul></div>
+                <div class="footer-col"><h4>Контакты</h4><p>📍 г. Жезказган, ул. Абая, 15</p><p>📞 +7 (7102) 12-34-56</p><p>✉️ info@coffeereverie.kz</p><p>⏰ Пн–Пт: 07:30 – 22:00<br>Сб–Вс: 09:00 – 23:00</p></div>
+                <div class="footer-col"><h4>Мы в соцсетях</h4><p>Следите за новинками</p><div class="social-links"><a href="#">📷</a><a href="#">✈️</a><a href="#">📱</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Coffee Reverie. Все права защищены.</p><button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Наверх</button></div>
+        </div>
+    </footer>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <div id="modalTech" class="tech-grid"></div>
+            <p id="modalDesc" class="modal-desc"></p>
+            <button id="accordionBtn" class="accordion-btn"><span>📋 Ингредиенты и пищевая ценность</span><span class="accordion-icon">▼</span></button>
+            <div id="accordionContent" class="accordion-content"><div id="ingredientsBlock"></div></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

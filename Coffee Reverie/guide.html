@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подбор кофе — Coffee Reverie</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Coffee Reverie</a>
+            <nav class="nav-menu">
+                <a href="menu.html" class="nav-link">Меню</a>
+                <a href="guide.html" class="nav-link active">Подбор кофе</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="guide-page">
+        <div class="guide-container" style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+            <!-- Заголовок -->
+            <h1 class="guide-title" style="text-align: center; font-size: 2.5rem; color: var(--coffee-deep);">Подберите свой кофе ☕️</h1>
+            <p class="guide-desc" style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">Ответьте на несколько вопросов, и мы подберём идеальный напиток.</p>
+
+            <!-- Квиз (опросник) -->
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="progress-step">1</div>
+                    <div class="progress-step">2</div>
+                    <div class="progress-step">3</div>
+                    <div class="progress-step">4</div>
+                </div>
+                <div class="quiz-steps">
+                    <div class="quiz-question">Какой эффект вы хотите получить?</div>
+
+                    <div id="step-0" class="quiz-step active-step">
+                        <div class="quiz-options">
+                            <div class="quiz-opt" data-step="0" data-value="energize"><span class="quiz-opt-icon">⚡</span><div class="quiz-opt-title">Бодрость</div><div class="quiz-opt-desc">Взбодриться с утра</div></div>
+                            <div class="quiz-opt" data-step="0" data-value="relax"><span class="quiz-opt-icon">😌</span><div class="quiz-opt-title">Расслабление</div><div class="quiz-opt-desc">Мягкий вечерний настрой</div></div>
+                        </div>
+                        <div class="quiz-nav"><button class="btn btn-secondary quiz-prev" style="visibility: hidden;">← Назад</button><button class="btn quiz-next">Далее →</button></div>
+                    </div>
+
+                    <div id="step-1" class="quiz-step">
+                        <div class="quiz-question">Как вы относитесь к молоку?</div>
+                        <div class="quiz-options">
+                            <div class="quiz-opt" data-step="1" data-value="yes"><span class="quiz-opt-icon">🥛</span><div class="quiz-opt-title">С молоком</div><div class="quiz-opt-desc">Люблю нежность</div></div>
+                            <div class="quiz-opt" data-step="1" data-value="no"><span class="quiz-opt-icon">💧</span><div class="quiz-opt-title">Без молока</div><div class="quiz-opt-desc">Чистый вкус кофе</div></div>
+                            <div class="quiz-opt" data-step="1" data-value="plant"><span class="quiz-opt-icon">🌱</span><div class="quiz-opt-title">Растительное</div><div class="quiz-opt-desc">Кокосовое, овсяное</div></div>
+                        </div>
+                        <div class="quiz-nav"><button class="btn btn-secondary quiz-prev">← Назад</button><button class="btn quiz-next">Далее →</button></div>
+                    </div>
+
+                    <div id="step-2" class="quiz-step">
+                        <div class="quiz-question">Любите сладость?</div>
+                        <div class="quiz-options">
+                            <div class="quiz-opt" data-step="2" data-value="sweet"><span class="quiz-opt-icon">🍯</span><div class="quiz-opt-title">Сладкий</div><div class="quiz-opt-desc">Добавлю сахара/сиропа</div></div>
+                            <div class="quiz-opt" data-step="2" data-value="neutral"><span class="quiz-opt-icon">⚖️</span><div class="quiz-opt-title">Умеренный</div><div class="quiz-opt-desc">Лёгкая сладость</div></div>
+                            <div class="quiz-opt" data-step="2" data-value="bitter"><span class="quiz-opt-icon">🍫</span><div class="quiz-opt-title">Горьковатый</div><div class="quiz-opt-desc">Минимум сахара</div></div>
+                        </div>
+                        <div class="quiz-nav"><button class="btn btn-secondary quiz-prev">← Назад</button><button class="btn quiz-next">Далее →</button></div>
+                    </div>
+
+                    <div id="step-3" class="quiz-step">
+                        <div class="quiz-question">Какой аромат вам ближе?</div>
+                        <div class="quiz-options">
+                            <div class="quiz-opt" data-step="3" data-value="floral"><span class="quiz-opt-icon">🌸</span><div class="quiz-opt-title">Цветочный</div><div class="quiz-opt-desc">Лаванда, жасмин</div></div>
+                            <div class="quiz-opt" data-step="3" data-value="nutty"><span class="quiz-opt-icon">🥜</span><div class="quiz-opt-title">Ореховый</div><div class="quiz-opt-desc">Миндаль, фундук</div></div>
+                            <div class="quiz-opt" data-step="3" data-value="fruity"><span class="quiz-opt-icon">🍊</span><div class="quiz-opt-title">Фруктовый</div><div class="quiz-opt-desc">Ягоды, цитрус</div></div>
+                            <div class="quiz-opt" data-step="3" data-value="chocolate"><span class="quiz-opt-icon">🍫</span><div class="quiz-opt-title">Шоколадный</div><div class="quiz-opt-desc">Какао, карамель</div></div>
+                        </div>
+                        <div class="quiz-nav"><button class="btn btn-secondary quiz-prev">← Назад</button><button class="btn quiz-next" style="display:none;">Далее →</button></div>
+                    </div>
+                </div>
+                <div class="quiz-result" style="display: none;"></div>
+            </div>
+
+            <!-- Блок "Совет бариста" -->
+            <div class="barista-tip">
+                <div class="barista-avatar">👩‍🍳</div>
+                <div class="barista-text">
+                    <h3>Совет бариста</h3>
+                    <p>«Для более насыщенного вкуса эспрессо используйте предварительно прогретую чашку.»<br><small style="opacity:0.7;">— Анна, шеф-бариста</small></p>
+                </div>
+                <button class="refresh-tip">⟳ Другой совет</button>
+            </div>
+
+            <!-- Глоссарий терминов -->
+            <div class="glossary-section">
+                <h2 class="glossary-title">📖 Глоссарий кофейных терминов</h2>
+                <div class="glossary-grid">
+                    <div class="glossary-item">
+                        <div class="glossary-term">Спешелти (Specialty) <span class="glossary-term-icon">▼</span></div>
+                        <div class="glossary-desc">Кофе высшего качества, оцененный экспертами SCA не менее чем на 80 баллов. Обладает уникальным вкусовым профилем.</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="glossary-term">Пуровер (Hario V60) <span class="glossary-term-icon">▼</span></div>
+                        <div class="glossary-desc">Ручной способ заваривания через воронку. Позволяет раскрыть тонкие ноты зерна за счёт контроля температуры и скорости заливки.</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="glossary-term">Раф-кофе <span class="glossary-term-icon">▼</span></div>
+                        <div class="glossary-desc">Напиток на основе сливок (или молока), эспрессо и ароматического сиропа. Отличается бархатистой текстурой.</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="glossary-term">Матча <span class="glossary-term-icon">▼</span></div>
+                        <div class="glossary-desc">Мелкомолотый зелёный чай из теневыращенного листа. Содержит антиоксиданты и даёт энергию без резких скачков кофеина.</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="glossary-term">Латте-арт <span class="glossary-term-icon">▼</span></div>
+                        <div class="glossary-desc">Рисунок на поверхности кофе с помощью молочной пены. Мастерство бариста.</div>
+                    </div>
+                    <div class="glossary-item">
+                        <div class="glossary-term">Хани (Honey) <span class="glossary-term-icon">▼</span></div>
+                        <div class="glossary-desc">Способ обработки кофейной ягоды, при котором часть мякоти остаётся на зерне, придавая напитку сладость и тело.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Сравнение видов кофе -->
+            <div class="comparison-section">
+                <h2 class="comparison-title">☕️ Сравнение видов кофе</h2>
+                <div class="table-wrapper">
+                    <table class="coffee-comparison">
+                        <thead>
+                            <tr>
+                                <th>Напиток</th>
+                                <th>Состав</th>
+                                <th>Объём</th>
+                                <th>Кофеин (мг)*</th>
+                                <th>Калорийность</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Эспрессо</td><td>30 мл кофе</td><td>30–40 мл</td><td>~60–80 мг</td><td>~5 ккал</td></tr>
+                            <tr><td>Американо</td><td>Эспрессо + горячая вода</td><td>120–200 мл</td><td>~60–80 мг</td><td>~5 ккал</td></tr>
+                            <tr><td>Капучино</td><td>Эспрессо + молоко + пена (1:1:1)</td><td>150–180 мл</td><td>~60–80 мг</td><td>~140 ккал</td></tr>
+                            <tr><td>Латте</td><td>Эспрессо + молоко + немного пены</td><td>200–240 мл</td><td>~60–80 мг</td><td>~180 ккал</td></tr>
+                            <tr><td>Раф</td><td>Эспрессо + сливки/молоко + сироп</td><td>200–240 мл</td><td>~60–80 мг</td><td>~350–450 ккал</td></tr>
+                            <tr><td>Флэт Уайт</td><td>Двойной эспрессо + микропена</td><td>160–180 мл</td><td>~120–160 мг</td><td>~120 ккал</td></tr>
+                            <tr><td>Матча Латте</td><td>Матча + молоко (кокосовое/овсяное)</td><td>200–240 мл</td><td>~30–50 мг</td><td>~180–220 ккал</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comparison-note">Содержание кофеина зависит от сорта зерна и способа заваривания. Указаны средние значения.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><div class="footer-logo-text">Coffee Reverie</div><p class="footer-description">Пространство эстетики, вкуса и ваших самых нежных кофейных грез. Ждем вас в гости каждый день.</p><div class="social-links"><a href="#">📷</a><a href="#">✈️</a><a href="#">📱</a></div></div>
+                <div class="footer-col"><h4>Быстрые ссылки</h4><ul class="footer-links"><li><a href="index.html">🏠 Главная</a></li><li><a href="menu.html">☕️ Меню</a></li><li><a href="guide.html">📖 Подбор кофе</a></li><li><a href="contacts.html">📞 Контакты</a></li></ul></div>
+                <div class="footer-col"><h4>Контакты</h4><p>📍 г. Жезказган, ул. Абая, 15</p><p>📞 +7 (7102) 12-34-56</p><p>✉️ info@coffeereverie.kz</p><p>⏰ Пн–Пт: 07:30 – 22:00<br>Сб–Вс: 09:00 – 23:00</p></div>
+                <div class="footer-col"><h4>Мы в соцсетях</h4><p>Следите за новинками</p><div class="social-links"><a href="#">📷</a><a href="#">✈️</a><a href="#">📱</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Coffee Reverie. Все права защищены.</p><button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Наверх</button></div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

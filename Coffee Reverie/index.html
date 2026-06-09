@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Reverie — Главная</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Coffee Reverie</a>
+            <nav class="nav-menu">
+                <a href="menu.html" class="nav-link">Меню</a>
+                <a href="guide.html" class="nav-link">Подбор кофе</a>
+                <a href="#faq" class="nav-link">Вопросы</a>
+            </nav>
+            <a href="contacts.html" class="btn btn-secondary" style="padding: 10px 22px; font-size: 0.9rem;">Где мы?</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container" style="text-align: center;">
+            <h1>Пространство Ваших<br>Кофейных Грез</h1>
+            <p>Уютное место в самом сердце Жезказгана, где каждый глоток нежного латте превращается в маленькое путешествие за пределы повседневной суеты.</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn">Открыть меню</a>
+                <a href="#contacts" class="btn btn-secondary">Забронировать столик</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <div class="values-grid">
+                <div class="value-card"><span class="value-icon">🌱</span><h3>100% Спешелти</h3><p>Работаем только с зерном класса Specialty этичного происхождения из Эфиопии и Колумбии.</p></div>
+                <div class="value-card"><span class="value-icon">🥛</span><h3>Любое молоко</h3><p>Готовим классику на цельном, безлактозном или растительном молоке без доплат.</p></div>
+                <div class="value-card"><span class="value-icon">🥐</span><h3>Своя пекарня</h3><p>Выпекаем круассаны и крафтовые тарты каждое утро ровно к 7:45, чтобы вы успели к завтраку.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" style="text-align: left;">Философия Уютного Момента</h2>
+                    <div class="section-divider" style="margin: 15px 0 30px 0;"></div>
+                    <p>Coffee Reverie родилась из простой мечты: создать место, где время течет иначе. В переводе Reverie означает «мечтательность» или «грезы наяву», и мы подчинили этой концепции абсолютно все.</p>
+                    <p>Мы отказались от резкого, горького кофе промышленной обжарки. Вместо этого наши мастера выбирают деликатные сорта и настраивают профили варки так, чтобы текстура напитка напоминала жидкий шелк.</p>
+                    <p>Здесь одинаково комфортно провести деловую встречу за чашкой фильтр-кофе, поработать за ноутбуком в уединенной зоне или провести идеальное воскресное утро с близкими.</p>
+                </div>
+                <div class="about-image-wrapper">
+                    <div class="about-image"><img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=600&q=85" alt="Наш бариста за работой"></div>
+                    <div class="about-badge">С 2024 года с вами</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Наши хиты</h2>
+            <p class="section-subtitle">Попробуйте самые популярные позиции. Полная карта вкусов — на странице <a href="menu.html" style="color: var(--coffee-deep); text-decoration: underline;">«Меню»</a>.</p>
+            <div class="menu-grid">
+                <div class="menu-item" data-name="Лавандовый Латте">
+                    <img src="https://avatars.mds.yandex.net/i?id=936dd4d5e008e6501ad5bef89828bdb8_l-3738095-images-thumbs&n=13" class="menu-item-img" alt="Лавандовый Латте">
+                    <div class="menu-item-info"><div class="menu-item-header"><span class="menu-item-title">Лавандовый Латте</span><span class="menu-item-price">320 ₽</span></div><p class="menu-item-desc">Фирменный эспрессо с воздушной молочной пеной и легким шлейфом крымской лаванды.</p></div>
+                </div>
+                <div class="menu-item" data-name="Карамельный Ревери Раф">
+                    <img src="https://avatars.mds.yandex.net/i?id=9e6f384d46305185abe9b933ceb9ff5e_l-9053045-images-thumbs&n=13" class="menu-item-img" alt="Карамельный Раф">
+                    <div class="menu-item-info"><div class="menu-item-header"><span class="menu-item-title">Карамельный Ревери Раф</span><span class="menu-item-price">350 ₽</span></div><p class="menu-item-desc">Нежнейшие сливки, взбитые с эспрессо и нашей секретной соленой карамелью.</p></div>
+                </div>
+                <div class="menu-item" data-name="Эспрессо (двойной)">
+                    <img src="https://avatars.mds.yandex.net/i?id=a4ff550ea0c80a38396c3feab6dcc1e1_l-5234178-images-thumbs&n=13" class="menu-item-img" alt="Эспрессо">
+                    <div class="menu-item-info"><div class="menu-item-header"><span class="menu-item-title">Эспрессо (двойной)</span><span class="menu-item-price">180 ₽</span></div><p class="menu-item-desc">Насыщенный, с плотной пенкой крема. Сорта: микс Бразилия и Эфиопия.</p></div>
+                </div>
+                <div class="menu-item" data-name="Капучино">
+                    <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=600&h=400&q=85" class="menu-item-img" alt="Капучино">
+                    <div class="menu-item-info"><div class="menu-item-header"><span class="menu-item-title">Капучино</span><span class="menu-item-price">260 ₽</span></div><p class="menu-item-desc">Эспрессо, равные доли молока и плотной молочной пены.</p></div>
+                </div>
+                <div class="menu-item" data-name="Матча Латте Церемониал">
+                    <img src="https://www.vitalproteins.com/cdn/shop/articles/AdobeStock_91649245-copy_600x.jpg?v=1595975471" class="menu-item-img" alt="Матча Латте">
+                    <div class="menu-item-info"><div class="menu-item-header"><span class="menu-item-title">Матча Латте Церемониал</span><span class="menu-item-price">340 ₽</span></div><p class="menu-item-desc">Японский зеленый чай высшего грейда на кокосовом молоке.</p></div>
+                </div>
+                <div class="menu-item" data-name="Миндальный Круассан">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=400&q=85" class="menu-item-img" alt="Миндальный Круассан">
+                    <div class="menu-item-info"><div class="menu-item-header"><span class="menu-item-title">Миндальный Круассан</span><span class="menu-item-price">240 ₽</span></div><p class="menu-item-desc">Хрустящее французское тесто, обилие начинки из франжипана и лепестки миндаля.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="coffee-guide">
+        <div class="container">
+            <div class="guide-box">
+                <h2 class="section-title" style="font-size: 2.2rem;">Какое у вас сегодня настроение?</h2>
+                <p style="color: var(--text-muted); margin-top: 10px;">Выберите один из вариантов, и мы подскажем идеальный напиток под ваш момент.</p>
+                <div class="guide-options">
+                    <div class="guide-opt" data-title="☕️ Классический Капучино или Фильтр-кофе" data-text="Отличный выбор для продуктивного дня и мощного фокуса.">☕️ Хочу классической бодрости</div>
+                    <div class="guide-opt" data-title="🌸 Лавандовый Латте" data-text="Идеально для неспешного созерцания и легких, приятных мыслей.">☁️ Окутайте меня нежностью</div>
+                    <div class="guide-opt" data-title="🍯 Фирменный Раф с Соленой Карамелью" data-text="Побалуйте себя ярким десертным вкусом и праздничной атмосферой.">🍓 Что-то необычное</div>
+                    <div class="guide-opt" data-title="🌿 Матча Латте на кокосовом молоке" data-text="Мягкий тонус без кофейного кофеина. Чистая природная энергия.">🌿 Альтернативный выбор</div>
+                </div>
+                <div class="result-box" id="resultBox">
+                    <div class="result-title" id="result-title"></div>
+                    <p id="result-text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Создатели атмосферы</h2>
+            <p class="section-subtitle">Люди, которые встречают вас улыбкой и знают наизусть ваши любимые кофейные предпочтения.</p>
+            <div class="team-grid">
+                <div class="team-card"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=85" class="team-img" alt="Анна"><div class="team-info"><div class="team-name">Анна Ковалева</div><div class="team-role">Шеф-бариста / Обжарщик</div></div></div>
+                <div class="team-card"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=85" class="team-img" alt="Марк"><div class="team-info"><div class="team-name">Марк Левин</div><div class="team-role">Мастер Латте-Арта</div></div></div>
+                <div class="team-card"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=85" class="team-img" alt="Елена"><div class="team-info"><div class="team-name">Елена Руднева</div><div class="team-role">Кондитер-технолог</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Наш Интерьер</h2>
+            <p class="section-subtitle">Каждый уголок Coffee Reverie создан для идеального кадра в соцсети или спокойного уединения.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=500&q=85" alt="Уютный столик"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=500&q=85" alt="Кофе на столе"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=500&q=85" alt="Общий план кофейни"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="faq-max">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <div class="section-divider" style="margin-bottom: 40px;"></div>
+                <div class="faq-item"><div class="faq-question">Можно ли у вас поработать за ноутбуком?</div><div class="faq-answer">Да, конечно! У нас оборудована специальная зона у окна со свободными розетками и высокоскоростным стабильным Wi-Fi.</div></div>
+                <div class="faq-item"><div class="faq-question">Какое альтернативное молоко у вас есть?</div><div class="faq-answer">Мы предлагаем овсяное, кокосовое, миндальное и фундучное молоко премиальных брендов абсолютно без дополнительной платы.</div></div>
+                <div class="faq-item"><div class="faq-question">Проводятся ли у вас мероприятия или каппинги?</div><div class="faq-answer">Каждую субботу в 12:00 мы проводим открытые дегустации (каппинги) для всех желающих погрузиться в культуру спешелти кофе. Вход свободный по записи.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><div class="footer-logo-text">Coffee Reverie</div><p class="footer-description">Пространство эстетики, вкуса и ваших самых нежных кофейных грез. Ждем вас в гости каждый день.</p><div class="social-links"><a href="#">📷</a><a href="#">✈️</a><a href="#">📱</a></div></div>
+                <div class="footer-col"><h4>Быстрые ссылки</h4><ul class="footer-links"><li><a href="index.html">🏠 Главная</a></li><li><a href="menu.html">☕️ Меню</a></li><li><a href="guide.html">📖 Подбор кофе</a></li><li><a href="contacts.html">📞 Контакты</a></li></ul></div>
+                <div class="footer-col"><h4>Контакты</h4><p>📍 г. Жезказган, ул. Абая, 15</p><p>📞 +7 (7102) 12-34-56</p><p>✉️ info@coffeereverie.kz</p><p>⏰ Пн–Пт: 07:30 – 22:00<br>Сб–Вс: 09:00 – 23:00</p></div>
+                <div class="footer-col"><h4>Мы в соцсетях</h4><p>Следите за новинками</p><div class="social-links"><a href="#">📷</a><a href="#">✈️</a><a href="#">📱</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Coffee Reverie. Все права защищены.</p><button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Наверх</button></div>
+        </div>
+    </footer>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <div id="modalTech" class="tech-grid"></div>
+            <p id="modalDesc" class="modal-desc"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

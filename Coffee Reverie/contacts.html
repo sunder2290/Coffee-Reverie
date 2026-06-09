@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Coffee Reverie</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Coffee Reverie</a>
+            <nav class="nav-menu">
+                <a href="menu.html" class="nav-link">Меню</a>
+                <a href="guide.html" class="nav-link">Подбор кофе</a>
+            </nav>
+            <a href="contacts.html" class="btn btn-secondary" style="padding: 10px 22px; font-size: 0.9rem;">Где мы?</a>
+        </div>
+    </header>
+
+    <main class="contacts-page">
+        <div class="container">
+            <div class="contacts-header">
+                <h1 class="contacts-title">Свяжитесь с нами</h1>
+                <p class="contacts-subtitle">Мы всегда рады ответить на ваши вопросы и ждём вас в гости в Жезказгане</p>
+            </div>
+
+            <div class="contacts-grid">
+                <div class="contacts-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Адрес</h3>
+                        <p>г. Жезказган, ул. Абая, 15<br>Казахстан</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Телефон</h3>
+                        <p>+7 (7102) 12-34-56</p>
+                        <p class="small">Ежедневно с 08:00 до 23:00</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>info@coffeereverie.kz</p>
+                        <p class="small">Для общих вопросов</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>Соцсети</h3>
+                        <div class="social-links">
+                            <a href="#">📷 Instagram</a>
+                            <a href="#">✈️ Telegram</a>
+                            <a href="#">📱 VK</a>
+                            <a href="#">▶️ YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-map">
+                    <h3>Как нас найти</h3>
+                    <div class="map-container">
+                        <!-- Яндекс.Карта с центром на Жезказгане (координаты 47.78, 67.71) -->
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=67.714990%2C47.780000&z=12&pt=67.714990,47.780000,flag" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="map-note">
+                        <p>🚇 Ближайшая остановка: «Абая» (2 минуты пешком)</p>
+                        <p>🚌 Автобусы: 1, 5, 12 до остановки «Улица Абая»</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedback-form">
+                <h2 class="form-title">Напишите нам</h2>
+                <form action="#" method="post" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email для ответа" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Ваше сообщение..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                    <p class="form-note">Мы ответим вам в ближайшее время</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">...</footer>
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за сообщение! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
